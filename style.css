@@ -1,0 +1,151 @@
+:root {
+  --bg: #0f1724;
+  --card: #0b1220;
+  --muted: #9aa4b2;
+  --accent: #6ee7b7;
+  --accent2: #60a5fa;
+  --radius: 14px;
+  --shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, #071128, #081226);
+  color: #e6eef8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.app {
+  width: 100%;
+  max-width: 500px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.clock-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.time-display {
+  font-size: 2rem;
+  font-weight: 700;
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-start {
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  color: #022031;
+}
+
+.btn-lap {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--muted);
+}
+
+.btn-reset {
+  background: transparent;
+  border: 1px solid rgba(255,0,0,0.2);
+  color: #ff8080;
+}
+
+.btn-export {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--muted);
+  font-size: 0.9rem;
+  padding: 6px 12px;
+}
+
+.hint {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.laps-card {
+  margin-top: 20px;
+  background: var(--card);
+  padding: 16px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.laps-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.laps-list {
+  list-style: none;
+  max-height: 200px;
+  overflow-y: auto;
+  font-size: 0.9rem;
+}
+
+.laps-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px dashed rgba(255,255,255,0.1);
+}
+
+.footer {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
