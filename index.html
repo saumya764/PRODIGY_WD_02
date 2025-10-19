@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pocket Stopwatch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <h1 class="title">Pocket Stopwatch</h1>
+      <p class="subtitle">Accurate • Simple • Stylish</p>
+    </header>
+
+    <section class="clock-card">
+      <div class="time-display" id="timeDisplay">00:00:00.000</div>
+
+      <div class="controls">
+        <button class="btn btn-start" id="startBtn">Start</button>
+        <button class="btn btn-lap" id="lapBtn" disabled>Lap</button>
+        <button class="btn btn-reset" id="resetBtn" disabled>Reset</button>
+      </div>
+      <p class="hint">Space = Start/Pause • L = Lap • R = Reset</p>
+    </section>
+
+    <section class="laps-card">
+      <div class="laps-header">
+        <h2>Lap Times</h2>
+        <button class="btn btn-export" id="exportBtn" disabled>Export CSV</button>
+      </div>
+      <ul class="laps-list" id="lapsList"></ul>
+    </section>
+
+    <footer class="footer">Built with ❤️ using HTML, CSS & JS</footer>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
